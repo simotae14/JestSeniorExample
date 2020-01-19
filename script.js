@@ -16,3 +16,5 @@ const googleSearch = searchInput => {
 }
 
 console.log(googleSearch('cat'));
+
+module.exports = googleSearch;
