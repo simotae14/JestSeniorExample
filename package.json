@@ -1,0 +1,12 @@
+{
+  "name": "jest-senior-example",
+  "version": "1.0.0",
+  "description": "Configuring and using Jest for the first time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["jest", "testing", "tdd"],
+  "author": "Simone Taeggi",
+  "license": "ISC"
+}
