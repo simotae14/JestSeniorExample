@@ -4,7 +4,7 @@
   "description": "Configuring and using Jest for the first time",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch *.js"
   },
   "keywords": [
     "jest",
