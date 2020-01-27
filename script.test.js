@@ -13,9 +13,14 @@ describe('googleSearch', () => {
     googleSearch('testtest', dbMock);
   });
 
+  it('is running', () => {
+    expect(googleSearch('dog', dbMock)).toExist;
+  });
+
   it('is searching google', () => {
     expect(googleSearch('testtest', dbMock)).toEqual([]);
     expect(googleSearch('dog', dbMock)).toEqual(['dog.com', 'dogpictures.com']);
+    expect(googleSearch('dog', dbMock)).toContain('dog.com');
   });
 
   it('work with undefined and null input', () => {
@@ -25,5 +30,7 @@ describe('googleSearch', () => {
 
   it('does not return more than 3 matches', () => {
     expect(googleSearch('com', dbMock).length).toEqual(3);
+    expect(googleSearch('com', dbMock).length).toBeLessThan(4);
   });
+
 });

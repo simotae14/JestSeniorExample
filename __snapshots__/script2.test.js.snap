@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getPeople returns count and results 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "https://swapi.co/api/people",
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": Promise {},
+    },
+  ],
+}
+`;
